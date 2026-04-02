@@ -1,44 +1,35 @@
 # common-notify
 
-A notification library for managing and sending common notifications across your applications.
+外部 HTTP 通知投递系统 - 接收业务系统提交的外部 HTTP 通知请求，并可靠地投递到目标地址。
 
-## Features
+## 架构
 
-- Simple and intuitive API for sending notifications
-- Support for multiple notification types
-- Easy integration into existing projects
-- Configurable notification handling
+- HTTP API 层：接收通知请求，幂等去重
+- SQLite 存储：持久化通知任务
+- Worker 池：并发投递，指数退避重试
 
-## Installation
+## 快速开始
 
 ```bash
-npm install common-notify
+# 构建
+go build -o common-notify .
+
+# 运行
+./common-notify
+
+# 发送测试请求
+curl -X POST http://localhost:8080/api/v1/notifications \
+  -H "Content-Type: application/json" \
+  -d '{
+    "out_biz_no": "test-001",
+    "event_type": "user.registered",
+    "target_url": "https://httpbin.org/post",
+    "method": "POST",
+    "headers": {"Content-Type": "application/json"},
+    "body": "{\"user_id\": 123}"
+  }'
 ```
 
-## Usage
+## 设计文档
 
-```javascript
-const { Notify } = require('common-notify');
-
-// Create a new notifier instance
-const notifier = new Notify();
-
-// Send a notification
-notifier.send({
-  type: 'info',
-  message: 'This is an info notification',
-  duration: 3000
-});
-```
-
-## Documentation
-
-For more detailed documentation and examples, please refer to the [documentation](./docs) folder.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is open source and available under the MIT License.
+详见 [docs/superpowers/specs/2026-04-02-common-notify-design.md](docs/superpowers/specs/2026-04-02-common-notify-design.md)
