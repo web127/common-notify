@@ -235,12 +235,7 @@ func (s *Store) UpdateNotification(notification *model.Notification) error {
 	now := time.Now()
 	notification.UpdatedAt = now
 
-	payloadJSON, err := json.Marshal(notification.Payload)
-	if err != nil {
-		return err
-	}
-
-	_, err = s.db.Exec(`
+	_, err := s.db.Exec(`
 		UPDATE notifications
 		SET status = ?, attempts = ?, last_attempt_at = ?, next_attempt_at = ?, error_message = ?, updated_at = ?
 		WHERE id = ?
