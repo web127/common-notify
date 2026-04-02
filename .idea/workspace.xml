@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1b886b4e-f5c8-4100-b916-988828c2e767" name="Changes" comment="first_version">
+      <change afterPath="$PROJECT_DIR$/.coco/AGENTS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/agents/code-reviewer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/commands/brainstorm.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/commands/execute-plan.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/commands/write-plan.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/brainstorming/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/brainstorming/scripts/frame-template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/brainstorming/scripts/helper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/brainstorming/scripts/server.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/brainstorming/scripts/start-server.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/brainstorming/scripts/stop-server.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/brainstorming/spec-document-reviewer-prompt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/brainstorming/visual-companion.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/dispatching-parallel-agents/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/executing-plans/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/finishing-a-development-branch/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/frontend-tdd-midscene/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/receiving-code-review/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/requesting-code-review/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/requesting-code-review/code-reviewer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/subagent-driven-development/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/subagent-driven-development/code-quality-reviewer-prompt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/subagent-driven-development/implementer-prompt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/subagent-driven-development/spec-reviewer-prompt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/systematic-debugging/CREATION-LOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/systematic-debugging/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/systematic-debugging/condition-based-waiting-example.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/systematic-debugging/condition-based-waiting.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/systematic-debugging/defense-in-depth.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/systematic-debugging/find-polluter.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/systematic-debugging/root-cause-tracing.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/systematic-debugging/test-academic.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/systematic-debugging/test-pressure-1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/systematic-debugging/test-pressure-2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/systematic-debugging/test-pressure-3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/test-driven-development/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/test-driven-development/testing-anti-patterns.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/using-git-worktrees/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/using-superpowers/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/using-superpowers/references/codex-tools.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/using-superpowers/references/copilot-tools.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/using-superpowers/references/gemini-tools.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/verification-before-completion/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/writing-plans/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/writing-plans/plan-document-reviewer-prompt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/writing-skills/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/writing-skills/anthropic-best-practices.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/writing-skills/examples/CLAUDE_MD_TESTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/writing-skills/graphviz-conventions.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/writing-skills/persuasion-principles.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/writing-skills/render-graphs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coco/skills/writing-skills/testing-skills-with-subagents.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/CodeverseWorkspaceAppSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/common-notify.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/go.imports.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AI Coding 作业-2026终版pdf.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-notify" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_requirement.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/origin_job_desc.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;web127&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="hk_v2" />
+                    <option name="lastUsedInstant" value="1775115839" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1775115631" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="home_work_v1" />
+                    <option name="lastUsedInstant" value="1775115471" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/web127/common-notify.git&quot;,
+    &quot;accountId&quot;: &quot;23cbd559-ce42-43d6-9b8a-8b67c9f3cb0a&quot;
+  }
+}</component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3Bn5TS0T39e2XR3Wpg9tLqe9REv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.GoLinterPluginOnboardingV2&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hk__v2&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bytedance/go/src/code.byted.org/fintech_cf/common-notify&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-72a9cf600ed8-448e06e64ec5-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-253.28294.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-GO-253.28294.337" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b886b4e-f5c8-4100-b916-988828c2e767" name="Changes" comment="" />
+      <created>1775112001018</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775112001018</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first_version" />
+    <option name="LAST_COMMIT_MESSAGE" value="first_version" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+  </component>
+</project>
