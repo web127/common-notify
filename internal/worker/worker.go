@@ -16,7 +16,7 @@ type Worker struct {
 // NewWorker 创建 worker
 func NewWorker(ns *service.NotificationService) *Worker {
 	return &Worker{
-		cron:                cron.New(),
+		cron:                cron.New(cron.WithSeconds()),
 		notificationService: ns,
 	}
 }
