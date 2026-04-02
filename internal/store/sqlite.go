@@ -142,13 +142,29 @@ func (s *SQLiteStore) ScheduleRetry(id int64, retryCount int, nextRetryAt time.T
 func scanNotification(row *sql.Row) (*model.Notification, error) {
 	var n model.Notification
 	var nextRetryAt sql.NullTime
+	var lastError sql.NullString
+	var headers sql.NullString
+	var body sql.NullString
+	var outBizNo sql.NullString
 	err := row.Scan(
-		&n.ID, &n.OutBizNo, &n.EventType, &n.CreatedAt, &n.Status,
-		&n.TargetURL, &n.Method, &n.Headers, &n.Body, &n.RetryCount,
-		&n.MaxRetries, &n.LastError, &nextRetryAt,
+		&n.ID, &outBizNo, &n.EventType, &n.CreatedAt, &n.Status,
+		&n.TargetURL, &n.Method, &headers, &body, &n.RetryCount,
+		&n.MaxRetries, &lastError, &nextRetryAt,
 	)
 	if err != nil {
 		return nil, err
+	}
+	if outBizNo.Valid {
+		n.OutBizNo = outBizNo.String
+	}
+	if headers.Valid {
+		n.Headers = headers.String
+	}
+	if body.Valid {
+		n.Body = body.String
+	}
+	if lastError.Valid {
+		n.LastError = lastError.String
 	}
 	if nextRetryAt.Valid {
 		n.NextRetryAt = &nextRetryAt.Time
@@ -159,13 +175,29 @@ func scanNotification(row *sql.Row) (*model.Notification, error) {
 func scanNotifications(rows *sql.Rows) (*model.Notification, error) {
 	var n model.Notification
 	var nextRetryAt sql.NullTime
+	var lastError sql.NullString
+	var headers sql.NullString
+	var body sql.NullString
+	var outBizNo sql.NullString
 	err := rows.Scan(
-		&n.ID, &n.OutBizNo, &n.EventType, &n.CreatedAt, &n.Status,
-		&n.TargetURL, &n.Method, &n.Headers, &n.Body, &n.RetryCount,
-		&n.MaxRetries, &n.LastError, &nextRetryAt,
+		&n.ID, &outBizNo, &n.EventType, &n.CreatedAt, &n.Status,
+		&n.TargetURL, &n.Method, &headers, &body, &n.RetryCount,
+		&n.MaxRetries, &lastError, &nextRetryAt,
 	)
 	if err != nil {
 		return nil, err
+	}
+	if outBizNo.Valid {
+		n.OutBizNo = outBizNo.String
+	}
+	if headers.Valid {
+		n.Headers = headers.String
+	}
+	if body.Valid {
+		n.Body = body.String
+	}
+	if lastError.Valid {
+		n.LastError = lastError.String
 	}
 	if nextRetryAt.Valid {
 		n.NextRetryAt = &nextRetryAt.Time
